@@ -6,6 +6,8 @@ Interactive explorer of the expert-sharing field among 322 rare diseases in Chin
 
 Each node is a rare disease; ties link diseases that share experts (shared-expert cosine similarity, computed from PubMed-indexed publications). Three period snapshots — P1 (2016–17), P2 (2021–22) and P3 (2024–25) — share fixed node positions, and *Play* runs a monthly time ruler from January 2016 to December 2025.
 
+The links at the bottom of the page open six figures from the accompanying paper (May 2026), also stored in `02_Static_Figures/`. The explorer draws a descriptive backbone of each disease's strongest shared-expert ties; the paper's blockmodels analyse the official-field networks, so tie counts differ between the two.
+
 **Preliminary results** (pipeline v3, October 2026). The data are disease-level aggregates and contain no information about individual people.
 
 Yanze Yu · Department of Sociology, Columbia University
