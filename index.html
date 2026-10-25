@@ -248,6 +248,7 @@
     .links a { color: var(--blue); text-decoration: none; font-weight: 700; }
     .credit { color: #344054; font-weight: 700; margin: 4px 0 2px; }
     .prelim { color: #9a3412; font-weight: 700; margin: 0 0 4px; }
+    .embed-bar { display: block; position: sticky; top: 0; z-index: 50; background: var(--blue); color: #fff; font-weight: 800; font-size: 14px; text-align: center; padding: 10px 12px; text-decoration: none; }
     .howto { border: 1px solid rgba(31,56,100,.22); border-radius: 7px; background: #f7f9fc; padding: 8px 10px; font-size: 12px; color: #344054; }
     .howto summary { cursor: pointer; font-weight: 800; color: var(--blue); }
     .howto ul { margin: 8px 0 2px; padding-left: 18px; }
@@ -2006,6 +2007,21 @@ window.__explorerBooted = true;
       };
       window.__frameNetworks = frameNetworks;
       setTimeout(frameNewlyShown, 150);
+    })();
+  </script>
+  <script>
+    /* Shown inside another page (e.g. the embed preview on a Notion page): offer a one-click way out to the full view. */
+    (function () {
+      var embedded;
+      try { embedded = window.self !== window.top; } catch (e) { embedded = true; }
+      if (!embedded) return;
+      var bar = document.createElement('a');
+      bar.className = 'embed-bar';
+      bar.href = location.href;
+      bar.target = '_blank';
+      bar.rel = 'noopener';
+      bar.textContent = 'Preview \u2014 open the full interactive explorer in a new tab \u2197';
+      document.body.insertBefore(bar, document.body.firstChild);
     })();
   </script>
   <div id="figModal" class="fig-modal" role="dialog" aria-modal="true" aria-labelledby="figModalTitle" hidden>
