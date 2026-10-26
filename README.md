@@ -8,7 +8,7 @@ Each node is a rare disease; ties link diseases that share publishing researcher
 
 The links at the bottom of the page open six figures from the accompanying paper (May 2026), also stored in `02_Static_Figures/`. The explorer draws a descriptive backbone of each disease's strongest shared-expert ties; the paper's blockmodels analyse the official-field networks, so tie counts differ between the two.
 
-**Preliminary results** from the first-round bibliometric analysis (spring 2026). The data are disease-level aggregates and contain no information about individual people.
+**Preliminary results** from the first-round bibliometric analysis (spring 2026). Two of the dissertation’s four focal cases are not yet properly represented here: Lesch–Nyhan syndrome is not named on any of the five lists that define this preliminary corpus, and publications on Pelizaeus–Merzbacher disease have not yet been matched to its entry. Both will be added in the next update of the corpus. The data are disease-level aggregates and contain no information about individual people.
 
 Yanze Yu · Department of Sociology, Columbia University
 
